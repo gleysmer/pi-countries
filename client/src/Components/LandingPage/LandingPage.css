@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    color: #49413a;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.PI-COUNTRIES{
+    text-align: center;
+}
+.fondo{
+  margin-top: 2px;
+  height: 98vh;
+  width: 204.9vh;
+  display: flex;
+}
+
+.division-2{
+    position: absolute;
+    top: 5%;
+    left: 45%;
+}
+
+.titulo{
+    font-size: 2.4em;
+    padding-top: 8%;
+    padding-bottom: 12%;
+    border-bottom: 1px solid #49413a;
+}
+
+.boton-ingresar{
+    width: 50%;
+    padding: 2%;
+    border: 0.5px solid;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+    font-size: large;
+}
+
+.boton-ingresar:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+  }

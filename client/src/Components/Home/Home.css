@@ -1,0 +1,51 @@
+.background{
+  background-image: url('../../img/8.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.caja-1{
+  text-align: center;
+}
+
+.caja-2{
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 50px;
+}
+
+.home-card{
+  text-align: center;
+  width: 296px;
+  margin: 30px 60px 10px 50px;
+  display: inline-table;
+  border: 8px double rgba(0, 0, 0, 0.768);
+  border-radius: 0px 0px 30px 30px;
+  font-size: 16px;
+  color: black;
+}
+
+/*FILTROS*/
+.span{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  
+  /* padding: 0px 3px 0px 0px; */
+  color: black;
+}
+
+.select{
+  margin: 30px 50px 0px 0px;
+  padding: 5px;
+  border-radius: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:medium;
+}
+
+.refresh{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 20px;
+}
