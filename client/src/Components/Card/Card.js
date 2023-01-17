@@ -6,7 +6,7 @@ export default function Card({id, name, flags , continents} ) {
     
     <div>
 
-      <img className="image" src={flags} alt='img not found' height='200px' width='282px' />
+      <img className="image" src={flags} alt='not img' height='200px' width='200px' />
       
       <h2 className='name'>{name}</h2>
        

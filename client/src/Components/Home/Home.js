@@ -15,17 +15,17 @@ export default function Home() {
   const allCountries = useSelector((state)=> state.countries)
   const allActivities = useSelector((state)=> state.activities)
 
-  //estado local para paginado
+  
   const [PaginaActual, setPaginaActual] = useState(1)
-  const [PaisesPorPagina, setPaisPorPagina] = useState(10)
+  const [PaisesPorPagina ] = useState(10)
   
   const indiceUltCountry = PaginaActual * PaisesPorPagina
   const indicePrimerCountry = indiceUltCountry - PaisesPorPagina
 
   const currentCountry = allCountries.slice(indicePrimerCountry, indiceUltCountry)
   
-  const paginado = (paginaNumero) => {
-    setPaginaActual(paginaNumero)
+  const paginado = (number) => {
+    setPaginaActual(number)
   }
 
   const [order, setOrder] = useState()
@@ -97,8 +97,8 @@ export default function Home() {
       <span className='span'>Ordenar de forma:</span>                  
         <select className='select' onChange={(e)=>handleOrderByName(e)}>
           <option>All</option>
-          <option value='asc'>Ascendente A-Z</option>
-          <option value='des'>Descendente Z-A</option>
+          <option value='ASC'>Ascendente A-Z</option>
+          <option value='DES'>Descendente Z-A</option>
         </select>
 
       <span className='span'>Ordenar por poblacion:</span>

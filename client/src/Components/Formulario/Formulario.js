@@ -92,7 +92,7 @@ export default function Formulario() {
     );
   }
   function handleDelete(id) {
-    //e.preventDefault(e)
+    
     setActivity({
       ...activity,
       countries: activity.countries.filter((t) => t !== id),
@@ -111,7 +111,7 @@ export default function Formulario() {
       <div className="formato">
         <div className="container_form">
           <form onSubmit={(e) => handleSubmit(e)}>
-              <h1 className="h1"> Create Touristic Activity </h1>
+              <h1 className="h1"> Create Activity </h1>
               
             <div className="name">
               <div>

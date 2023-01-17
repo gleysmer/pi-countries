@@ -17,7 +17,7 @@ export default function Detail() {
     <div className='detail'>
 
       <div className='bot'>
-       <Link to="/home"><button className='boton-volver'>Volver</button></Link>
+       <Link to="/home"><button className='boton-volver'>Back</button></Link>
       </div>
 
       <div className='padre-container'>

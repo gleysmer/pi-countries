@@ -13,7 +13,7 @@ export default function Login(){
                 <div className='division-2'>
                     <h1 className='titulo'>WELCOME TO COUNTRIES</h1>
                     <Link to="/home">
-                     <button className='boton-ingresar'>Ingresar</button>
+                     <button className='boton-ingresar'>Continue</button>
                     </Link>
                 </div>
 
