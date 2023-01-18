@@ -7,7 +7,7 @@
 }
 .container_form {
     width: 500px;
-    height: 00px;
+    height: 700px;
   
     background-color: aqua;
     border:black solid ;
@@ -30,7 +30,7 @@
     background-color: hsla(0,0%,100%,.25);
     padding: 10px;
     margin-top: 90px;
-    margin-left: 800px;
+    margin-left: 500px;
     margin-right: 800px;
 }
 
