@@ -17,10 +17,10 @@ export default function Home() {
 
   
   const [PaginaActual, setPaginaActual] = useState(1)
-  const [PaisesPorPagina ] = useState(10)
+  const [countryPage ] = useState(10)
   
-  const indiceUltCountry = PaginaActual * PaisesPorPagina
-  const indicePrimerCountry = indiceUltCountry - PaisesPorPagina
+  const indiceUltCountry = PaginaActual * countryPage
+  const indicePrimerCountry = indiceUltCountry - countryPage
 
   const currentCountry = allCountries.slice(indicePrimerCountry, indiceUltCountry)
   
@@ -128,7 +128,7 @@ export default function Home() {
           })}
         </div>
           <Paginado
-          PaisesPorPagina={PaisesPorPagina}
+          PaisesPorPagina={countryPage}
           allCountries={allCountries.length}
           paginado={paginado}
         />
