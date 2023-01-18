@@ -40,7 +40,7 @@ function rootReducer(state= initialState, action){
             };
 
         //FILTRAR POR CONTINENT -> Asia 
-        case "FILTRAR_POR_CONTINENTE":
+        case "FILTER_BY_CONTINENT":
             const allCountries = state.allCountries;
             const FiltradoContinente = action.payload === "All" ? allCountries : allCountries.filter((elemento)=> elemento.continents === action.payload);
             return{
@@ -48,7 +48,7 @@ function rootReducer(state= initialState, action){
                 countries: FiltradoContinente ,
             };
 
-        case "FILTRAR_POR_ACTIVIDAD_TURISTICA":
+        case "FILTER_BY_ACTIVITY":
             const FiltradoActividad =
             action.payload === "All" ? state.allCountries : state.allCountries.filter((c) => c.activities && c.activities.filter((a) => a.name === action.payload).length);
             return {
@@ -71,7 +71,7 @@ function rootReducer(state= initialState, action){
           countries: orderName
         }
 
-        case "ORDENAR_POR_CANT_POBLACION":
+        case "ORDERR_BY_POPULATION":
             const orderByPopulation = action.payload === "desc" 
             ? state.countries.sort(function (a,b) {
                   if (a.population > b.population) return 1;

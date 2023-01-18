@@ -1,13 +1,14 @@
 
 
 .inicio_boton{
-    height: 31px;;
+    height: 35px;
+    width: 150px;
     margin-top: 20px;
-    font-size: 28px;
+    font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 10px;
-    padding-bottom: 35px;
-    margin-right: 500px;
+    padding-bottom: 25px;
+    margin-right: 200px;
     margin-left: 140px;
     box-shadow: 10px 8px 10px rgb(115, 106, 106);
     cursor: pointer; 
@@ -22,9 +23,10 @@
     width: 250px;
     height: 25px;
     border-radius: 10px ;
-   padding: 17px;
+   padding: 30px;
     font-family:  Arial, sans-serif;
-    font-size: 28px;
+    font-size: 23px;
+    margin-bottom: 20px;
 }
 
 .buscar{
@@ -36,17 +38,18 @@
     color:rgb(0, 0, 0);
     background-color:   rgba(179, 188, 47, 0.65);
     margin-left: 10px;
+    
 }
 .buscar:hover{
     box-shadow: 10px 8px 10px rgb(93, 86, 86);
 }
 
 .createcountry_boton{
-    height: 21px;
+    height: 30px;
     font-size: 28px;
     font-family: Arial, sans-serif;
     border-radius: 10px;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
     margin-left: 160px;
     margin-right: 100px;
     box-shadow: 10px 8px 10px rgb(115, 106, 106);

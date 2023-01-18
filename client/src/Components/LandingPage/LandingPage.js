@@ -5,7 +5,7 @@ import fondoLanding from "../../img/3.jpg"
 
 export default function Login(){
     return(
-        <div>
+        <div className='container'>
             <div className='PI-COUNTRIES'>
 
                 <img className="fondo"src={fondoLanding}></img>

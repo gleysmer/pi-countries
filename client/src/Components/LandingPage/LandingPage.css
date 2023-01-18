@@ -6,21 +6,23 @@
 
 .PI-COUNTRIES{
     text-align: center;
-}
-.fondo{
-  margin-top: 2px;
-  height: 98vh;
-  width: 204.9vh;
-  display: flex;
+    
 }
 
+.fondo{
+    margin-top: 2px;
+    height: 100%;
+    width: 100%;
+  
+  }
 .division-2{
     position: absolute;
     top: 5%;
-    left: 45%;
+    left: 30%;
 }
 
 .titulo{
+    color: black;
     font-size: 2.4em;
     padding-top: 8%;
     padding-bottom: 12%;
@@ -34,6 +36,7 @@
     margin-top: 1em;
     margin-bottom: 2.5em;
     font-size: large;
+    
 }
 
 .boton-ingresar:hover {

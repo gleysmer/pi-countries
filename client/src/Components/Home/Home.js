@@ -4,7 +4,7 @@ import '../Home/Home.css'
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
-import { getAllCountries, getActivities, filterByContinent, filterByActivityTour, orderByName, orderByPopulation } from '../../Redux/Actions';
+import { getAllCountries, getActivities, filterByContinent, filterByActivity, orderByName, orderByPopulation } from '../../Redux/Actions';
 import Card from '../Card/Card.js'
 import Paginado from '../Paginado/Paginado';
 import SearchBar from '../SearchBar/SearchBar';
@@ -52,7 +52,7 @@ export default function Home() {
 
   function handleFilterAct(e){
     e.preventDefault()
-    dispatch(filterByActivityTour(e.target.value))
+    dispatch(filterByActivity(e.target.value))
   }
 
   function handleOrderByName(e){

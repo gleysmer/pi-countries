@@ -64,14 +64,14 @@ export function getActivities(){
 
 export function filterByContinent(payload){
   return {
-    type: "FILTRAR_POR_CONTINENTE",
+    type: "FILTER_BY_CONTINENT",
     payload
   }
 }
 
-export function filterByActivityTour(payload){
+export function filterByActivity(payload){
     return {
-        type: "FILTRAR_POR_ACTIVIDAD_TURISTICA",
+        type: "FILTER_BY_ACTIVITY",
         payload
     }
 }
@@ -85,7 +85,7 @@ export function orderByName(payload){
 
 export function orderByPopulation(payload){
   return {
-    type: "ORDENAR_POR_CANT_POBLACION",
+    type: "ORDER_BY_POPULATION",
     payload
   }
 }
