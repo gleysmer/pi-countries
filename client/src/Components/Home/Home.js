@@ -66,7 +66,7 @@ export default function Home() {
     e.preventDefault();
     dispatch(orderByPopulation(e.target.value));
     setOrder(`Ordenado ${e.target.value}`);
-    setPaginaActual(1)
+    
   }
   return (
     <div className='background'>

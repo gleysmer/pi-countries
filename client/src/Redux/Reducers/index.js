@@ -71,7 +71,7 @@ function rootReducer(state= initialState, action){
           countries: orderName
         }
 
-        case "ORDERR_BY_POPULATION":
+        case "ORDER_BY_POPULATION":
             const orderByPopulation = action.payload === "desc" 
             ? state.countries.sort(function (a,b) {
                   if (a.population > b.population) return 1;

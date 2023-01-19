@@ -28,7 +28,7 @@ export default function SearchBar({setPaginaActual}) {
 
           <input 
             className='busqueda'
-            value={name}
+            value="name"
             type='text' 
             placeholder="Buscar pais..."
             onChange={(e)=>{handleInputChange(e)}}
