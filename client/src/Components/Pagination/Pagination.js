@@ -1,11 +1,11 @@
 import React from "react";
 import './Paginado.css';
 
-export default function Paginado({PaisesPorPagina, allCountries, paginado}){
+export function Pagination({countryPage, allCountries, paginado}){
 
   const pageNumbers =[]
 
-  for (let i = 1; i <= Math.ceil(allCountries/PaisesPorPagina); i++) {
+  for (let i = 1; i <= Math.ceil(allCountries/countryPage); i++) {
     pageNumbers.push(i)
     
   }

@@ -25,10 +25,10 @@ export default function SearchBar({setPaginaActual}) {
     <div className='container'>
         <div>
           <Link to="/"><button className='inicio_boton'>Inicio</button></Link>
-
+          <Link to="/about"><button className='inicio_boton'>About</button></Link>
           <input 
             className='busqueda'
-            value="name"
+            value={name}
             type='text' 
             placeholder="Buscar pais..."
             onChange={(e)=>{handleInputChange(e)}}

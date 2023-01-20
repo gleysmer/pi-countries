@@ -20,8 +20,10 @@
   text-align: center;
   width: 290px;
   margin: 30px 60px 10px 50px;
-  display: inline-table;
-  border: 8px double rgba(0, 0, 0, 0.768);
+  display: inline-table; 
+ 
+ 
+  border: 5px double rgba(0, 0, 0, 0.768);
   border-radius: 0px 0px 30px 30px;
   font-size: 16px;
   color: black;

@@ -4,25 +4,35 @@ import './Detail.css'
 import { useDispatch, useSelector } from "react-redux";
 import { getCountryDetail } from '../../Redux/Actions/index.js'
 
-export default function Detail() {
+export function Detail() {
   const dispatch = useDispatch();
   const {id} = useParams()
   const detail = useSelector((state)=> state.detail);
- 
+  
+  
+
   useEffect(()=>{
     dispatch(getCountryDetail(id))
   }, [dispatch, id]);
+
+  
+
+  // const handleBack=()=>{
+  //   history.go(-1)
+  // }
 
   return (
     <div className='detail'>
 
       <div className='bot'>
-       <Link to="/home"><button className='boton-volver'>Back</button></Link>
+       <Link to="/home"><button className='boton-volver' >Back</button></Link>
+      
+      {/* <button onClick={(e)=> handleBack(e)}>Back</button> */}
       </div>
 
       <div className='padre-container'>
         <img className='imagen' src={detail.flags} alt="flags" />
-        <p className='color'> Name: {Detail.name} </p>
+        <p className='color'> Name: {detail.name} </p>
         <p className='color'> Continents:{detail.continents} </p>
         <p className='color'> Capital:{detail.capital} </p>
         <p className='color'> Subregion:{detail.subregion} </p>
@@ -33,9 +43,9 @@ export default function Detail() {
           {detail.activities && detail.activities.map((e) => (
             <div key={e.id}>
                 <p className='color'>Name: {e.name}</p>
-                <p className='color'>Season: {e.season} </p>
+                {/* <p className='color'>Season: {e.season} </p>
                 <p className='color'>Duration: {e.duration} </p>
-                <p className='color'>Difficulty: {e.difficulty} </p>
+                <p className='color'>Difficulty: {e.difficulty} </p> */}
             </div>
           ))}
       </div>

@@ -1,0 +1,68 @@
+
+.container {
+   
+    padding: 20px;
+
+   
+}
+.btn {
+
+    
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    background-color:  rgba(179, 188, 47, 0.65);
+    color:rgb(0, 0, 0);
+    font-size:35px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    cursor: pointer;
+    box-shadow: 10px 8px 10px rgb(115, 106, 106);
+
+}
+.btn:hover{
+    box-shadow: 10px 8px 10px rgb(93, 86, 86);
+    
+}
+
+.mainConteinerAbout{
+
+    padding: 30px;
+    max-width: 100%;
+    height: 100%;
+    font-weight: 300;
+    font-size: 25px;
+    background-color: rgb(17, 182, 116);
+    text-align: center;
+    
+}
+.imageDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageDiv > img{
+    border-radius: 50%;
+    margin: 20px;
+    border: 5px solid #ffffff;
+    width: 350px;
+    height: 350px;
+}
+
+.linksItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.links > span > a {
+    text-align: center;
+    margin: 12px;
+}
+
+.links > span > a:first-child {
+    margin-left: 0;
+}

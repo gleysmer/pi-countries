@@ -1,5 +1,5 @@
 import React , { useState, useEffect } from "react";
-import '../Formulario/Formulario.css';
+import './Formulario.css';
 import { Link } from "react-router-dom";
 import { getAllCountries, postCountryActivity  } from "../../Redux/Actions";
 import { useDispatch, useSelector } from "react-redux";
@@ -13,9 +13,9 @@ export function Validate(activity){
   }
 
   if(activity.name.length < 3){
-    errors.name = "The activity must have a minimum of 3 letters";
+    errors.name = "el nombre debe tener un mínimo de 3 letras";
   }else if(!reg.test(activity.name)){
-    errors.name = "Activity cannot have numbers";
+    errors.name = "solo se aceptan letras";
   }
 
   if(!activity.difficulty){
@@ -32,7 +32,7 @@ export function Validate(activity){
   return errors;
 }
 
-export default function Formulario() {
+export function Form() {
   const dispatch = useDispatch()
   const  countries  = useSelector((state)=> state.allCountries)
 

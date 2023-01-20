@@ -6,10 +6,10 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
 import { getAllCountries, getActivities, filterByContinent, filterByActivity, orderByName, orderByPopulation } from '../../Redux/Actions';
 import Card from '../Card/Card.js'
-import Paginado from '../Paginado/Paginado';
+import { Pagination } from '../Pagination/Pagination';
 import SearchBar from '../SearchBar/SearchBar';
 
-export default function Home() {
+export function Home() {
   const dispatch = useDispatch()
 
   const allCountries = useSelector((state)=> state.countries)
@@ -24,11 +24,15 @@ export default function Home() {
 
   const currentCountry = allCountries.slice(indicePrimerCountry, indiceUltCountry)
   
+
+
+
   const paginado = (number) => {
     setPaginaActual(number)
   }
 
   const [order, setOrder] = useState()
+  console.log(order)
 
   useEffect(()=>{
     dispatch(getAllCountries())
@@ -42,6 +46,7 @@ export default function Home() {
   function handleClickRefresh(e){
     e.preventDefault()
     dispatch(getAllCountries());
+    setPaginaActual(1)
   }
 
   function handleFilterByContinent(e){
@@ -53,6 +58,7 @@ export default function Home() {
   function handleFilterAct(e){
     e.preventDefault()
     dispatch(filterByActivity(e.target.value))
+    setPaginaActual(1)
   }
 
   function handleOrderByName(e){
@@ -66,6 +72,7 @@ export default function Home() {
     e.preventDefault();
     dispatch(orderByPopulation(e.target.value));
     setOrder(`Ordenado ${e.target.value}`);
+    setPaginaActual(1)
     
   }
   return (
@@ -104,8 +111,8 @@ export default function Home() {
       <span className='span'>Ordenar por poblacion:</span>
         <select className='select' onChange={(e)=>{handlePopulation(e)}}>
           <option>All</option>
-          <option value='asc'> Mas alta </option>
-          <option value='desc'> Mas baja </option>
+          <option value='DESC'> Mas alta </option>
+          <option value='ASC'> Mas baja </option>
         </select>
 
         <button className="refresh" onClick={(e)=>handleClickRefresh(e)}>Refresh countries</button>
@@ -127,8 +134,8 @@ export default function Home() {
             )
           })}
         </div>
-          <Paginado
-          PaisesPorPagina={countryPage}
+          <Pagination
+          countryPage={countryPage}
           allCountries={allCountries.length}
           paginado={paginado}
         />

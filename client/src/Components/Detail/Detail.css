@@ -10,13 +10,13 @@
     text-align: center;
     border-radius: 25px;
     margin-top: 50px;
-    width: 800px;
-    margin-left: 25%;
-    border: 0.3rem solid rgb(0, 0, 0)
+    width: 500px;
+    margin-left: 30%;
+    border: 3px double rgb(0, 0, 0)
 }
 
 .imagen{
-    width: 400px;
+    width: 350px;
     border-radius: 15px;
     padding-top: 30px;
 }
@@ -47,6 +47,6 @@
 
 }
 .color-act{
-    color:rgb(162, 17, 17);
+    color:rgb(231, 223, 223);
     font-size:xx-large;
 }
